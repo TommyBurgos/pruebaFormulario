@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div class="formulario">
+		
+	
+	<form action="formu.php" method="POST">
+		<table>
+			<tr>
+				<td>Nombre:</td>
+				<td><input type="text" name="nombre" placeholder="Tú nombre" required></td>
+			</tr>
+			<tr>
+				<td>Contraseña:</td>
+				<td><input type="password" name="password" placeholder="Contraseña" required></td>
+			</tr>
+			<tr>
+				<td>Genero:</td>
+				<td>
+					<input type="radio" name="genero" value="F" required> Femenino
+					<input type="radio" name="genero" value="M" required> Masculino
+				</td>
+			</tr>
+			<tr>
+				<td>Mail</td>
+				<td><input type="email" placeholder="Tu correo" name="email" required></td>
+			</tr>
+			<tr>
+				<td>Materia</td>
+				<td>
+					<SELECT name="materia" class="seleccion" required>
+						<option selected hidden value="">Materias</option> 
+						<option value="calculo">Calculo</option>
+						<option value="Fisica">Fisica</option>
+						<option value="Quimica">Quimica</option>
+						<option value="Anatomia">Anatomia</option>
+					</SELECT>
+					<input type="phone" name="telefono" placeholder="Tú telefono">
+				</td>				
+			</tr>
+			<tr>
+				<td> 
+					<input type="submit" value="ENVIAR" name="enviar"> 
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+</body>
+</html>
